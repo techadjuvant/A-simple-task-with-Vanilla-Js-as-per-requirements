@@ -1,0 +1,319 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+
+        <!-- Main Container  -->
+        <div class="main-container">
+
+            <!-- Left Pane Container  -->
+            <div class="left-pane-contianer">
+                <div class="left-pane-top">                                    
+                    <div class="left-pane-header">
+                        <div class="headr-name"><p>Pages</p></div>
+                        <div id="countResult" class="hideElement">Filtered Results <span id="noResults">0</span></div>
+                        <div><img src="img/plus.png" ></div>
+                    </div>
+                </div>
+
+                <!-- Sortable tabs container  -->
+                <div id="sortable-tabs">
+                    <div id="tab1" class="single-page-tab activeTab">
+                        <div class="single-page-tab-name">
+                            <div class="setting-img"><img src="img/li_img.png"></div>
+                            <div class="single-page-name"><p>a</p></div>
+                        </div>
+                        <div class="single-page-tab-action" >
+                            <div class="checkbox-img"><input id="check1" type="checkbox" name="checkbox"></div>
+                            <div class="delete-btn" onclick="deleteTab( 'check1', 'tab1')"><img src="img/delete.png"></div>
+                        </div>    
+                    </div> 
+                    <div id="tab2" class="single-page-tab">
+                        <div class="single-page-tab-name">
+                            <div class="setting-img"><img src="img/li_img.png"></div>
+                            <div class="single-page-name"><p>as</p></div>
+                        </div>
+                        <div class="single-page-tab-action">
+                            <div class="checkbox-img"><input id="check2" type="checkbox" name="checkbox"></div>
+                            <div class="delete-btn" onclick="deleteTab('check2', 'tab2')"><img src="img/delete.png"></div>
+                        </div>    
+                    </div> 
+                    <div id="tab3" class="single-page-tab">
+                        <div class="single-page-tab-name">
+                            <div class="setting-img"><img src="img/li_img.png"></div>
+                            <div class="single-page-name"><p>asdf</p></div>
+                        </div>
+                        <div class="single-page-tab-action">
+                            <div class="checkbox-img"><input id="check3" type="checkbox" name="checkbox"></div>
+                            <div class="delete-btn" onclick="deleteTab('check3', 'tab3')"><img src="img/delete.png"></div>
+                        </div>    
+                    </div> 
+                    <div id="tab4" class="single-page-tab">
+                        <div class="single-page-tab-name">
+                            <div class="setting-img"><img src="img/li_img.png"></div>
+                            <div class="single-page-name"><p>asdfa</p></div>
+                        </div>
+                        <div class="single-page-tab-action">
+                            <div class="checkbox-img"><input id="check4" type="checkbox" name="checkbox"></div>
+                            <div class="delete-btn" onclick="deleteTab('check4', 'tab4')"><img src="img/delete.png"></div>
+                        </div>    
+                    </div>
+                    <div id="tab5" class="single-page-tab">
+                        <div class="single-page-tab-name">
+                            <div class="setting-img"><img src="img/li_img.png"></div>
+                            <div class="single-page-name"><p>asdfas</p></div>
+                        </div>
+                        <div class="single-page-tab-action">
+                            <div class="checkbox-img"><input id="check5" type="checkbox" name="checkbox"></div>
+                            <div class="delete-btn" onclick="deleteTab('check5', 'tab5')"><img src="img/delete.png"></div>
+                        </div>    
+                    </div> 
+                    <div id="tab6" class="single-page-tab">
+                        <div class="single-page-tab-name">
+                            <div class="setting-img"><img src="img/li_img.png"></div>
+                            <div class="single-page-name"><p>asdfasd</p></div>
+                        </div>
+                        <div class="single-page-tab-action">
+                            <div class="checkbox-img"><input id="check6" type="checkbox" name="checkbox"></div>
+                            <div class="delete-btn" onclick="deleteTab('check6', 'tab6')"><img src="img/delete.png"></div>
+                        </div>    
+                    </div> 
+                    <div id="tab7" class="single-page-tab">
+                        <div class="single-page-tab-name">
+                            <div class="setting-img"><img src="img/li_img.png"></div>
+                            <div class="single-page-name"><p>asdfasdf</p></div>
+                        </div>
+                        <div class="single-page-tab-action">
+                            <div class="checkbox-img"><input id="check7" type="checkbox" name="checkbox"></div>
+                            <div class="delete-btn" onclick="deleteTab('check7', 'tab7')"><img src="img/delete.png"></div>
+                        </div>    
+                    </div>
+                    <div id="tab8" class="single-page-tab">
+                        <div class="single-page-tab-name">
+                            <div class="setting-img"><img src="img/li_img.png"></div>
+                            <div class="single-page-name"><p>Contact</p></div>
+                        </div>
+                        <div class="single-page-tab-action">
+                            <div class="checkbox-img"><input id="check8" type="checkbox" name="checkbox"></div>
+                            <div class="delete-btn" onclick="deleteTab('check8', 'tab8')"><img src="img/delete.png"></div>
+                        </div>    
+                    </div>
+                    <div id="tab9" class="single-page-tab">
+                        <div class="single-page-tab-name">
+                            <div class="setting-img"><img src="img/li_img.png"></div>
+                            <div class="single-page-name"><p>Contact</p></div>
+                        </div>
+                        <div class="single-page-tab-action">
+                            <div class="checkbox-img"><input id="check9" type="checkbox" name="checkbox"></div>
+                            <div class="delete-btn" onclick="deleteTab('check9', 'tab9')"><img src="img/delete.png"></div>
+                        </div>    
+                    </div> 
+
+                    <div id="tab10" class="single-page-tab">
+                        <div class="single-page-tab-name">
+                            <div class="setting-img"><img src="img/li_img.png"></div>
+                            <div class="single-page-name"><p>as</p></div>
+                        </div>
+                        <div class="single-page-tab-action">
+                            <div class="checkbox-img"><input id="check10" type="checkbox" name="checkbox"></div>
+                            <div class="delete-btn" onclick="deleteTab('check10', 'tab10')"><img src="img/delete.png"></div>
+                        </div>    
+                    </div> 
+                    <div id="tab11" class="single-page-tab">
+                        <div class="single-page-tab-name">
+                            <div class="setting-img"><img src="img/li_img.png"></div>
+                            <div class="single-page-name"><p>asdf</p></div>
+                        </div>
+                        <div class="single-page-tab-action">
+                            <div class="checkbox-img"><input id="check11" type="checkbox" name="checkbox"></div>
+                            <div class="delete-btn" onclick="deleteTab('check11', 'tab11')"><img src="img/delete.png"></div>
+                        </div>    
+                    </div> 
+                    <div id="tab12" class="single-page-tab">
+                        <div class="single-page-tab-name">
+                            <div class="setting-img"><img src="img/li_img.png"></div>
+                            <div class="single-page-name"><p>asdfa</p></div>
+                        </div>
+                        <div class="single-page-tab-action">
+                            <div class="checkbox-img"><input id="check12" type="checkbox" name="checkbox"></div>
+                            <div class="delete-btn" onclick="deleteTab('check12', 'tab12')"><img src="img/delete.png"></div>
+                        </div>    
+                    </div>
+                    <div id="tab13" class="single-page-tab">
+                        <div class="single-page-tab-name">
+                            <div class="setting-img"><img src="img/li_img.png"></div>
+                            <div class="single-page-name"><p>asdfas</p></div>
+                        </div>
+                        <div class="single-page-tab-action">
+                            <div class="checkbox-img"><input id="check13" type="checkbox" name="checkbox"></div>
+                            <div class="delete-btn" onclick="deleteTab('check13', 'tab13')"><img src="img/delete.png"></div>
+                        </div>    
+                    </div> 
+                    <div id="tab14" class="single-page-tab">
+                        <div class="single-page-tab-name">
+                            <div class="setting-img"><img src="img/li_img.png"></div>
+                            <div class="single-page-name"><p>asdfasd</p></div>
+                        </div>
+                        <div class="single-page-tab-action">
+                            <div class="checkbox-img"><input id="check14" type="checkbox" name="checkbox"></div>
+                            <div class="delete-btn" onclick="deleteTab('check14', 'tab14')"><img src="img/delete.png"></div>
+                        </div>    
+                    </div> 
+                    <div id="tab15" class="single-page-tab">
+                        <div class="single-page-tab-name">
+                            <div class="setting-img"><img src="img/li_img.png"></div>
+                            <div class="single-page-name"><p>asdfasdf</p></div>
+                        </div>
+                        <div class="single-page-tab-action">
+                            <div class="checkbox-img"><input id="check15" type="checkbox" name="checkbox"></div>
+                            <div class="delete-btn" onclick="deleteTab('check15', 'tab15')"><img src="img/delete.png"></div>
+                        </div>    
+                    </div>
+                    <div id="tab16" class="single-page-tab">
+                        <div class="single-page-tab-name">
+                            <div class="setting-img"><img src="img/li_img.png"></div>
+                            <div class="single-page-name"><p>Sheared Plesk</p></div>
+                        </div>
+                        <div class="single-page-tab-action">
+                            <div class="checkbox-img"><input id="check16" type="checkbox" name="checkbox"></div>
+                            <div class="delete-btn" onclick="deleteTab('check16', 'tab16')"><img src="img/delete.png"></div>
+                        </div>    
+                    </div>
+                    <div id="tab17" class="single-page-tab">
+                        <div class="single-page-tab-name">
+                            <div class="setting-img"><img src="img/li_img.png"></div>
+                            <div class="single-page-name"><p>Sheared Plesk2</p></div>
+                        </div>
+                        <div class="single-page-tab-action">
+                            <div class="checkbox-img"><input id="check17" type="checkbox" name="checkbox"></div>
+                            <div class="delete-btn" onclick="deleteTab('check17', 'tab17')"><img src="img/delete.png"></div>
+                        </div>    
+                    </div>
+                    <div id="tab18" class="single-page-tab">
+                        <div class="single-page-tab-name">
+                            <div class="setting-img"><img src="img/li_img.png"></div>
+                            <div class="single-page-name"><p>as </p></div>
+                        </div>
+                        <div class="single-page-tab-action">
+                            <div class="checkbox-img"><input id="check18" type="checkbox" name="checkbox"></div>
+                            <div class="delete-btn" onclick="deleteTab('check18', 'tab18')"><img src="img/delete.png"></div>
+                        </div>    
+                    </div> 
+                    <div id="tab19" class="single-page-tab">
+                        <div class="single-page-tab-name">
+                            <div class="setting-img"><img src="img/li_img.png"></div>
+                            <div class="single-page-name"><p>asdf</p></div>
+                        </div>
+                        <div class="single-page-tab-action">
+                            <div class="checkbox-img"><input id="check19" type="checkbox" name="checkbox"></div>
+                            <div class="delete-btn" onclick="deleteTab('check19', 'tab19')"><img src="img/delete.png"></div>
+                        </div>    
+                    </div> 
+                    <div id="tab20" class="single-page-tab">
+                        <div class="single-page-tab-name">
+                            <div class="setting-img"><img src="img/li_img.png"></div>
+                            <div class="single-page-name"><p>asdfa</p></div>
+                        </div>
+                        <div class="single-page-tab-action">
+                            <div class="checkbox-img"><input id="check20" type="checkbox" name="checkbox"></div>
+                            <div class="delete-btn" onclick="deleteTab('check20', 'tab20')"><img src="img/delete.png"></div>
+                        </div>    
+                    </div>
+                    <div id="tab21" class="single-page-tab">
+                        <div class="single-page-tab-name">
+                            <div class="setting-img"><img src="img/li_img.png"></div>
+                            <div class="single-page-name"><p>asdfas</p></div>
+                        </div>
+                        <div class="single-page-tab-action">
+                            <div class="checkbox-img"><input id="check21" type="checkbox" name="checkbox"></div>
+                            <div class="delete-btn" onclick="deleteTab('check21', 'tab21')"><img src="img/delete.png"></div>
+                        </div>    
+                    </div> 
+                    <div id="tab22" class="single-page-tab">
+                        <div class="single-page-tab-name">
+                            <div class="setting-img"><img src="img/li_img.png"></div>
+                            <div class="single-page-name"><p>asdfasd</p></div>
+                        </div>
+                        <div class="single-page-tab-action">
+                            <div class="checkbox-img"><input id="check22" type="checkbox" name="checkbox"></div>
+                            <div class="delete-btn" onclick="deleteTab('check22', 'tab22')"><img src="img/delete.png"></div>
+                        </div>    
+                    </div> 
+                    <div id="tab23" class="single-page-tab">
+                        <div class="single-page-tab-name">
+                            <div class="setting-img"><img src="img/li_img.png"></div>
+                            <div class="single-page-name"><p>asdfasdf</p></div>
+                        </div>
+                        <div class="single-page-tab-action">
+                            <div class="checkbox-img"><input id="check23" type="checkbox" name="checkbox"></div>
+                            <div class="delete-btn" onclick="deleteTab('check23', 'tab23')"><img src="img/delete.png"></div>
+                        </div>    
+                    </div>
+                    <div id="tab24" class="single-page-tab">
+                        <div class="single-page-tab-name">
+                            <div class="setting-img"><img src="img/li_img.png"></div>
+                            <div class="single-page-name"><p>Contact</p></div>
+                        </div>
+                        <div class="single-page-tab-action">
+                            <div class="checkbox-img"><input id="check24" type="checkbox" name="checkbox"></div>
+                            <div class="delete-btn" onclick="deleteTab('check24', 'tab24')"><img src="img/delete.png"></div>
+                        </div>    
+                    </div>
+                    <div id="tab25" class="single-page-tab">
+                        <div class="single-page-tab-name">
+                            <div class="setting-img"><img src="img/li_img.png"></div>
+                            <div class="single-page-name"><p>Last</p></div>
+                        </div>
+                        <div class="single-page-tab-action">
+                            <div class="checkbox-img"><input id="check25" type="checkbox" name="checkbox"></div>
+                            <div class="delete-btn" onclick="deleteTab('check25', 'tab25')"><img src="img/delete.png"></div>
+                        </div>    
+                    </div>
+                </div>
+                <!-- Ends Sortable tabs container  -->
+                
+                <div class="filter-container">
+                    <p>Filter:</p>
+                    <input id="filterInput" oninput="filterFunction()" type="text" name="filter" value="">
+                    <div  class="delete-filter"><img onclick="deleteFilter()" id="deleteFilterImg" class="hideElement" src="img/delete.png"></div>
+                </div>
+
+            </div>
+            <!-- Ends Left Pane Container  -->
+
+            <!-- Right Pane Container  -->
+            <div class="right-pane-container">
+                <div class="header-container">
+                    <div class="nav-tab tab1 active" onclick="openPage(event, 'pageDetails')">Page Details</div>
+                    <div class="nav-tab tab2" onclick="openPage(event, 'pageConstant')">Page Constant</div>
+               </div> 
+                <div class="right-pane-body">
+                    <div id="pageDetails" class="tab1-body right-pan-normal-mode" style="display: block"><h2>Page Details</h2></div>
+                    <div id="pageConstant" class="tab2-body right-pan-normal-mode"><h2>Page Constant</h2></div>
+                </div>
+            </div>
+            <!-- Ends Right Pane Container  -->
+
+        </div>
+        <!-- Ends Main Container  -->
+
+        <!-- jQuery -->
+        <script src="js/vendor/jquery-3.3.1.js"></script>
+        <script src="js/vendor/jquery-ui.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
